@@ -1,0 +1,46 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: auto; 
+  }
+  
+ .header img{
+    width: 100%;
+
+}
+.header__contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s; /* To Show Fade Animation on page reload ( fadeIn is keyframe name which is created in index.css */
+
+}
+.header__contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+.header__contents p{
+     color: white;
+     font-size: 1vw;
+}
+.header__contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    border-radius: 50px;
+    background-color: white;
+    font-size: max(1vw,13px);
+    cursor: pointer;
+}
+.header__contents button:hover{
+    background-color: #d0c4c1;
+    color:black;
+    transition: 1s;
+}

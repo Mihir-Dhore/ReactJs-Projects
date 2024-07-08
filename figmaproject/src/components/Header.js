@@ -10,7 +10,7 @@ import { faHeart as faHeartEmpty } from "@fortawesome/free-regular-svg-icons";
 export default function Header() {
   return (
     <>
-      <header className="p-6 shadow-lg border-b-black">
+      <header className="p-6   border-b-2">
         <div class="grid grid-cols-3 gap-4">
           <div class="bg-white text-3xl text-center font-semibold">
             Exclusive

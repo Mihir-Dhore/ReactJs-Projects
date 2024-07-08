@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.App{
+    width: 80%;
+    margin: auto;
+    font-family: "Outfit"  /* Get this font from above imported URL(Searched for outfit font)  */
+}
+
+/* To Show Fade Animation on page reload  */
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        }
+}
