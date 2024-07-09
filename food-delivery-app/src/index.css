@@ -3,12 +3,13 @@
 *{
     padding: 0px;
     margin: 0px;
-    
+    font-family: "Outfit" ; /* Get this font from above imported URL(Searched for outfit font)  */
+    scroll-behavior: smooth;
+
 }
 .App{
     width: 80%;
     margin: auto;
-    font-family: "Outfit"  /* Get this font from above imported URL(Searched for outfit font)  */
 }
 
 /* To Show Fade Animation on page reload  */

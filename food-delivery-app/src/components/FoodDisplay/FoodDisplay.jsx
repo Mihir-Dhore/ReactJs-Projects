@@ -9,20 +9,28 @@ export const FoodDisplay = ({ category }) => {
 
   return (
     <div className="food-display" id="food-display">
-      <h2>Top dishes near you</h2>
       <div className="food-display" id="food-display">
         <h2>Top dishes near you</h2>
         <div className="food-display-list">
           {food_list.map((item, index) => {
-            return (
-              <FoodItems
-                id={index}
-                name={item.name}
-                price={item.price}
-                description={item.description}
-                image={item.image}
-              />
-            );
+            //food_list is in assets/assets.js
+
+            if (category === "All" || item.category === category) {
+              return (
+                <FoodItems
+                  id={index}
+                  name={item.name}
+                  price={item.price}
+                  description={item.description}
+                  image={item.image}
+                  category={category}
+                  // menuCategory={menuCategory}
+                />
+              );
+            } else if (item.category !== category) {
+              console.log("Insides");
+              <p>No Data</p>;
+            }
           })}
         </div>
       </div>

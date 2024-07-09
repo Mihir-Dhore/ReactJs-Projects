@@ -1,0 +1,28 @@
+.app-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+ }
+ .appDownload-content  {
+    margin: 5vw;
+ }
+ .appDownload-content  p{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+ }
+ .appDownload-content .appDownload-icon{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    height: 4vw;
+ }
+ .appDownload-icon img{
+    cursor: pointer;
+    transition: 0.5s;
+ }
+ .appDownload-icon img:hover{
+    transform: scale(1.2);
+ }

@@ -17,7 +17,7 @@
     max-width: 50%;
     bottom: 10%;
     left: 6vw;
-    animation: fadeIn 3s; /* To Show Fade Animation on page reload ( fadeIn is keyframe name which is created in index.css */
+    animation: fadeIn 3s; /* To Show Fade Animation on page reload ( fadeIn is keyframe name which is created in index.css ) */
 
 }
 .header__contents h2{
