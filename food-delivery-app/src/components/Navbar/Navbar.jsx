@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 //import link
 import { Link } from "react-router-dom";
+import { StoreContext } from "../../context/StoreContext";
 export default function Navbar({ showLogin, setShowLogin }) {
   const [menu, setMenu] = useState("home");
 
+  const { getTotalCartAmount } = useContext(StoreContext);
   return (
     <div className="navbar">
-      <img src={assets.logo} alt="" className="logo" />
+      <Link to="/">
+        <img src={assets.logo} alt="" className="logo" />
+      </Link>
+
       <ul className="navbar-menu">
         <Link
           to="/"
@@ -42,8 +47,12 @@ export default function Navbar({ showLogin, setShowLogin }) {
       <div className="navbar-right">
         <img src={assets.search_icon} alt="" />
         <div className="navbar-search-icon">
-          <img src={assets.basket_icon} alt="" />
-          <div className="dot"></div>
+          <Link to="/cart">
+            {" "}
+            {/* To Route cart Page so we use Link--> When need to show Route page onclick of anything use Link Tag and add to="/Its path" into it*/}
+            <img src={assets.basket_icon} alt="" />
+          </Link>
+          <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
         </div>
         <button onClick={() => setShowLogin(true)}> Sign In</button>
       </div>

@@ -21,6 +21,8 @@ function App() {
       <div className="App">
         <Navbar setShowLogin={setShowLogin} />
 
+        {/* React Router DOM in React JS helps you switch between different pages or sections 
+        of your app without refreshing the whole page.*/}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />

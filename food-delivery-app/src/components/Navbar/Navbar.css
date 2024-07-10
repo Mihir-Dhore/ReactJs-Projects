@@ -3,7 +3,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    /* Below 4 lines are to make Navbar Sticky */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color:white;
+    
+   
+ }
 .navbar-menu{
     display: flex;
     list-style: none;
