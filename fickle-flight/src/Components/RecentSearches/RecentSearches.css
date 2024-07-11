@@ -1,0 +1,43 @@
+.recent-searches {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0px;
+}
+.recent-searches b {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgb(66, 61, 61);
+}
+.recent-searches-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.recent-searches-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 25px 5px;
+  border: 1px solid rgb(194, 187, 187);
+  border-radius: 6px;
+  margin: 10px 5px;
+  gap: 70px;
+  width: fit-content;
+  align-items: center;
+}
+.recent-searches-container .flight-logo-timing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flight-logo-timing p {
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+p span {
+  font-weight: normal;
+  padding-left: 4px;
+}
+.recent-searches-list h2 {
+  color: #1262ae;
+}
