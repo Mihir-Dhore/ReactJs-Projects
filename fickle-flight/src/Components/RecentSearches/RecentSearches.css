@@ -1,7 +1,7 @@
 .recent-searches {
-  width: 80%;
+  /* width: 80%;
   margin: auto;
-  padding: 40px 0px;
+  padding: 40px 0px; */
 }
 .recent-searches b {
   font-size: 1.5em;
@@ -9,10 +9,14 @@
   color: rgb(66, 61, 61);
 }
 .recent-searches-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  width: 100%;
 }
 .recent-searches-list {
+  /* To Add  .recent-searches-container in one line uses flex 1*/
+  flex: 1;
+  margin: 0 10px;
+
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   padding: 25px 5px;
@@ -40,4 +44,23 @@ p span {
 }
 .recent-searches-list h2 {
   color: #1262ae;
+}
+.yourTripMain {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.yourTripMain h2 {
+  font-size: 21px;
+  color: rgb(203, 199, 199);
+}
+.yourTripMain-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.yourTripMain-container p {
+  text-align: center;
+  color: rgb(171, 157, 157);
+  cursor: pointer;
 }

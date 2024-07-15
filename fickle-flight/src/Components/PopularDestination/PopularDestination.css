@@ -1,0 +1,14 @@
+.popularDestination {
+  padding: 2px;
+  padding-top: 40px;
+}
+.popularDestination__container {
+  display: flex;
+  justify-content: space-between;
+}
+.popularDestination__container-title h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #085fb0;
+  cursor: pointer;
+}

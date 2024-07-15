@@ -29,6 +29,35 @@ export const RecentSearches = () => {
           <h2>DUB</h2>
         </div>
       </div>
+      <div className="yourTripMain">
+        <h2>Prepare For Your Trip</h2>
+        <div className="yourTripMain-container">
+          <div>
+            <img src={assets.Home} alt="" />
+            <p>Hotel</p>
+          </div>
+          <div>
+            <img src={assets.Attractions} alt="" />
+            <p>Attraction</p>
+          </div>
+          <div>
+            <img src={assets.Eats} alt="" />
+            <p>Eats</p>
+          </div>
+          <div>
+            <img src={assets.Commute} alt="" />
+            <p>Commute</p>
+          </div>
+          <div>
+            <img src={assets.Taxi} alt="" />
+            <p>Taxi</p>
+          </div>
+          <div>
+            <img src={assets.Movies} alt="" />
+            <p>Movie</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
