@@ -11,6 +11,7 @@ import reducer from "./reducer";
 const AppContext = createContext();
 
 //define useReducer
+
 let API = "https://hn.algolia.com/api/v1/search?";
 
 const initialState = {
