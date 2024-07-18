@@ -2,8 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Navbar } from "./Components/Navbar/Navbar";
 import { Home } from "./pages/Home/Home";
-import { Routes, Route } from "react-router-dom";
 import { Search } from "./pages/Search/Search";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -11,13 +11,11 @@ function App() {
       <div className="App">
         <Navbar />
 
-        {/* React Router DOM in React JS helps you switch between different pages or sections 
-        of your app without refreshing the whole page.*/}
-        <Home />
-        {/* <Routes>
-          <Route path="/" element={} />
-          <Route path="/cart" element={<Search />} />
-        </Routes> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
+          {/* <Route path="/order" element={<PlaceOrder />} /> */}
+        </Routes>
       </div>
     </>
   );

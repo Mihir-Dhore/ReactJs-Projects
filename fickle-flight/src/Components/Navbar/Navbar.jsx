@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [activeTab, setActiveTab] = useState("explore");
@@ -10,17 +11,23 @@ export const Navbar = () => {
         {/* <div onClick={()=>setActiveTab(true)} className="navbar-left"> */}
         <img className="logo" src={assets.logo} alt="" /> {/* </div> */}
         <ul className="navbar-menu-list">
-          <li
-            onClick={() => setActiveTab("explore")}
-            className={activeTab === "explore" ? "activeTab" : ""}
-          >
-            Explore
+          <li>
+            <Link
+              to="/"
+              onClick={() => setActiveTab("explore")}
+              className={activeTab === "explore" ? "activeTab" : ""}
+            >
+              Explore
+            </Link>
           </li>
-          <li
-            onClick={() => setActiveTab("search")}
-            className={activeTab === "search" ? "activeTab" : ""}
-          >
-            Search
+          <li>
+            <Link
+              to="/search"
+              onClick={() => setActiveTab("search")}
+              className={activeTab === "search" ? "activeTab" : ""}
+            >
+              Search
+            </Link>
           </li>
           <li
             onClick={() => setActiveTab("hotels")}
@@ -41,9 +48,13 @@ export const Navbar = () => {
             <img
               className="navbar-notification"
               src={assets.notification1}
-              alt=""
+              alt="Notification"
             />
-            <img className="navbar-profile" src={assets.profile} alt="" />
+            <img
+              className="navbar-profile"
+              src={assets.profile}
+              alt="Profile"
+            />
           </div>
         </ul>
       </div>

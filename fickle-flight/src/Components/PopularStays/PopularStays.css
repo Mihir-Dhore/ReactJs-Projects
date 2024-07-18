@@ -1,0 +1,53 @@
+.popularStays__container-stays {
+  display: flex;
+  gap: 20px;
+  padding: 20px 15px;
+  overflow-x: scroll;
+}
+.popularStays__container-stays::-webkit-scrollbar {
+  display: none;
+}
+.popularStays_outside {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  border-radius: 5px;
+}
+.popularStays_outside img {
+  border-radius: 10px;
+}
+.popularStaysInnerContent {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.popularStaysInnerContent p {
+  font-size: 16px;
+  color: grey;
+}
+.popularStaysInnerContent h2 {
+  font-size: 22px;
+  color: black;
+  font-weight: 800;
+}
+.popularStaysInnerContent h4 {
+  font-size: 16px;
+  color: rgb(69, 67, 67);
+  font-weight: 400;
+}
+.popularStaysInnerContent .rating {
+  color: rgb(21, 21, 21);
+  padding-top: 5px;
+  padding-left: 0px;
+}
+.popularStaysInnerContent .rating span {
+  color: rgb(57, 97, 227);
+}
+button {
+  width: 100%;
+  padding: 10px 20px;
+  color: rgb(57, 97, 227);
+  background: none;
+  border: 1px solid gray;
+  cursor: pointer;
+  margin-top: 20px;
+}

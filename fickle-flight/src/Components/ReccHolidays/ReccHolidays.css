@@ -1,0 +1,83 @@
+.popularDestination {
+  padding: 5px;
+  padding-top: 40px;
+}
+.popularDestination__container {
+  display: flex;
+  justify-content: space-between;
+}
+.popularDestination__container-title h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #085fb0;
+  cursor: pointer;
+}
+.reccHolidays__innerContentSection {
+  display: flex;
+  overflow-x: scroll;
+  /* white-space: nowrap; */
+  gap: 20px;
+  padding: 20px 20px;
+}
+.reccHolidays__innerContentSection::-webkit-scrollbar {
+  /* To Hide Scrollbar */
+  display: none;
+}
+
+.ReccHolidays_Img {
+  position: relative;
+  flex: 0 0 auto;
+  width: 290px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ReccHolidays_Img img {
+  width: 100%;
+  height: 200px;
+
+  height: auto;
+}
+
+.ReccHolidays_Img-InnerContent {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text more readable */
+  color: white;
+}
+
+.left-content {
+  text-align: left;
+}
+
+.right-content {
+  text-align: right;
+  margin-right: 15px;
+}
+.reccHoliday-innerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8px;
+}
+.reccHoliday-innerContent h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.reccHoliday-innerContent p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(150, 139, 139);
+}
+.reccHoliday-innerContent h3 {
+  font-size: 25px;
+  font-weight: 900;
+  color: #085fb0;
+}
